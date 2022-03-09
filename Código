@@ -3,11 +3,15 @@
 void main()
 {
     int n1,i,a=0,b=0,c=0,nc;
-    printf("Selecciona un número menor que 1000\n");
+    printf("Selecciona un número entero mayor que 0 y menor que 1000 \n");
     scanf("%i",&n1);
     if(n1>999)
         {
             printf("El programa no funciona con números mayores que 999 \n");
+        }
+    if(n1<1)
+        {
+            printf("El programa no funciona con números menores que 1 \n");
         }
     if(n1>=100 && n1<=999)
         {
@@ -23,7 +27,7 @@ void main()
             b=n1/10;
             c=(n1%10);
         }
-    else if(n1<10)
+    else if(n1<10 && n1>0)
         {
             nc=1;
             c=n1;
@@ -40,7 +44,10 @@ void main()
         {
             printf("%i \n",c);
         }
-    printf("El número %i en números romanos se escribe: ", n1);
+    if(n1>=1 && n1<=999)
+        {
+            printf("El número %i en números romanos se escribe: ", n1);
+        }
     switch(a)
             {
                 case 1:printf("C"); break;
