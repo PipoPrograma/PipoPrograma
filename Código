@@ -2,7 +2,7 @@
 #include <math.h>
 void main()
 {
-    int n1,i,a=0,b=0,c=0,nc;
+    int n1,a=0,b=0,c=0,nc;
     printf("Selecciona un número entero mayor que 0 y menor que 1000 \n");
     scanf("%i",&n1);
     if(n1>999)
